@@ -9,10 +9,10 @@ public class programarray {
         nilaimahasiswa[2][0] = 75;
         nilaimahasiswa[3][0] = 70;
 
-        nilaimahasiswa[4][0] = nilaimahasiswa[0][0] * bobot [0] +
-            nilaimahasiswa[1][0] * bobot [1] +
-            nilaimahasiswa[2][0] * bobot [2] +
-            nilaimahasiswa[3][0] * bobot [3];
+        nilaimahasiswa[4][0] = nilaimahasiswa[0][0] +
+            nilaimahasiswa[1][0] +
+            nilaimahasiswa[2][0] +
+            nilaimahasiswa[3][0] ;
 
         System.out.println("nilai si mahasiswa 1 : " +nilaimahasiswa[4][0]);
 
@@ -23,5 +23,16 @@ public class programarray {
 
         nilaimahasiswa[4][1] = 0;
         for (int i = 0 ; i<=3 ; i++) {
-            nilaimahasiswa[4][1] += nilaimahasiswa[i][1] * bobot[i];
+            nilaimahasiswa[4][1] += nilaimahasiswa[i][1] ;
         }
+
+
+        System.out.println("nilai si mahasiswa 2 : " +nilaimahasiswa[4][1]);
+
+        double jumlahNilaiAkir = 0;
+        for (int i=0 ; i<=3 ; i++){
+            jumlahNilaiAkir += nilaimahasiswa[4][1];
+        }
+        System.out.println(jumlahNilaiAkir);
+}
+}
