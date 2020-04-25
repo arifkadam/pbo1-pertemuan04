@@ -8,5 +8,11 @@ public class programwhile {
         System.out.println("isi gelas sekarang : " + isiGelas + "ml");
         System.out.println("isi gelas ketika penuh : " + penuh + "ml");
 
+        while (isiGelas != penuh){
+            isiGelas++;
+            System.out.println("sedang mengisi gelas..");
+            System.out.println("isi gelas sekarang");
+        }
+
     }
 }
