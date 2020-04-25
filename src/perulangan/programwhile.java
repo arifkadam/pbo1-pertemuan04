@@ -11,8 +11,11 @@ public class programwhile {
         while (isiGelas != penuh){
             isiGelas++;
             System.out.println("sedang mengisi gelas..");
-            System.out.println("isi gelas sekarang");
-        }
+            System.out.println("isi gelas sekarang : " + isiGelas + "ml");
+
+        }while (isiGelas != penuh);
+
+        System.out.println("finale: isi gelas sekarang : " + isiGelas + "ml");
 
     }
 }
